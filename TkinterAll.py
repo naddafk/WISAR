@@ -1,34 +1,30 @@
+from tkinter import*  
+#from TabsConnect import* 
+from TkinterRad1 import*
+from TkinterFire2 import*
 from tkinter import*
-from TkinterTabs import*
-from TkinterFire import*
-#from Jimmy import*
+from tkinter_webcam import webcam
+import tkinter as tk
 
 
 def start(root):
-    root.geometry("500x450")
-    root.title("Welcome to WISAR")
-
-    Button(root, text= "View Radars", font= ('Arial', 32), width=20 , command= lambda : change(Tabs)).grid()
-    Button(root, text= "Find Firefighters", font = ('Arial', 32) , width=20 , command= lambda : change(Firefighters)).grid()
-
+    root.geometry("605x450")
+    root.title("Welcome To WISAR")
+    Label(root, fg = "black" ,text=  "Welcome To",  font = ('Maiandra GD', 40), width=20).grid()
+    Label(root, fg = "SpringGreen4" ,text=  "WISAR",  font = ('Maiandra GD', 40), width=20).grid()
+    Button(root, bg = "floralwhite", text= "View Radars", font = ('Maiandra GD', 32) , width=20 , command= lambda : change(Tabs)).grid()
+    Button(root, bg = "floralwhite", text= "Find Firefighters", font = ('Maiandra GD', 32) , width=20 , command= lambda : change(Firefighters)).grid()
 
 
 def change(root):
-    if root.__name__ == "Tabs":
-            fun_Tabs()
-    if root.__name__ == "Firefighters":
-            fun_fire()
-       
-
-
-
-       
-
-
-
+     if root.__name__ == "Tabs":
+          fun_Tabs()
+     if root.__name__ == "Firefighters":
+          fun_fire()
+    
 def call():
-    root=Tk()
-    start(root)
-    root.mainloop()
+     root=Tk()
+     start(root)
+     root.mainloop()
 
-call() 
+call()

@@ -1,7 +1,10 @@
-import tkinter as tk
+import tkinter as tk 
 from tkinter_webcam import webcam
+from tkinter import*
 
-root = tk.Tk()
+
+
+root= Toplevel()
 
 root.title("Webcam Live Feed")
 
