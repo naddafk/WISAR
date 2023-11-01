@@ -49,7 +49,7 @@ def Jimmy(root):
     root.geometry("500x450")
 
     video = webcam.Box(root, width=500, height = 450)
-    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=10, y=60, height = 45, width= 90)
+    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=5, y=20, height = 45, width= 90)
     video.show_frames()
 
     root.mainloop()
@@ -65,7 +65,7 @@ def Sarah(root):
     root.geometry("500x450")
 
     video = webcam.Box(root, width=500, height = 450)
-    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=10, y=60, height = 45, width= 90)
+    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=5, y=20, height = 45, width= 90)
     video.show_frames()
 
     root.mainloop()
@@ -81,7 +81,7 @@ def Luffy(root):
     root.geometry("500x450")
 
     video = webcam.Box(root, width=500, height = 450)
-    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=10, y=60, height = 45, width= 90)
+    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=5, y=20, height = 45, width= 90)
     video.show_frames()
 
     root.mainloop()
@@ -102,7 +102,7 @@ def Tom(root):
     root.geometry("500x450")
 
     video = webcam.Box(root, width=500, height = 450)
-    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=10, y=60, height = 45, width= 90)
+    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=5, y=20, height = 45, width= 90)
     video.show_frames()
 
     root.mainloop()
@@ -116,7 +116,7 @@ def Blake(root):
     root.geometry("500x450")
 
     video = webcam.Box(root, width=500, height = 450)
-    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=10, y=60, height = 45, width= 90)
+    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=5, y=20, height = 45, width= 90)
     video.show_frames()
 
     root.mainloop()
@@ -133,7 +133,7 @@ def Sam(root):
     root.geometry("500x450")
 
     video = webcam.Box(root, width=500, height = 450)
-    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=10, y=60, height = 45, width= 90)
+    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=5, y=20, height = 45, width= 90)
     video.show_frames()
 
     root.mainloop()
@@ -149,7 +149,7 @@ def Bob(root):
     root.geometry("500x450")
 
     video = webcam.Box(root, width=500, height = 450)
-    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=10, y=60, height = 45, width= 90)
+    Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=5, y=20, height = 45, width= 90)
     video.show_frames()
 
     root.mainloop()
