@@ -54,6 +54,13 @@ class MainView(tk.Frame):
 
 
 
+
+
+
+def change(root):
+     if root.__name__ == "Jimmy":
+          fun_Jimmy()
+
 if __name__ == "__main__":
     root = tk.Tk()
     main = MainView(root)

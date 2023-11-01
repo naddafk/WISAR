@@ -9,6 +9,8 @@ root=tk.Tk
 def Firefighters(root):
     root.geometry("500x450")
     root.title("Firefighters")
+    backbtn= tk.Button(root,text="Back", font= ('Maiandra GD', 25))
+    backbtn.place(x=17, y=70, height = 45, width= 90)
     Label(root, text= "Firefighters", font = ('Maiandra GD', 32), width=20).grid() 
     Button(root, text= "Jimmy 💗 68", bg = "crimson", fg = 'ghostwhite', font = ('Maiandra GD', 17) , width=20 , command= lambda : change(Jimmy)).grid()
     Button(root, text= "Sarah  💗 83", bg = "crimson", fg = 'ghostwhite', font = ('Maiandra GD', 17) , width=20 , command= lambda : change(Sarah)).grid()

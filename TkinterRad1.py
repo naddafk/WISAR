@@ -1,8 +1,6 @@
 import tkinter as tk                     
 from tkinter import ttk 
 from tkinter import*
-from tkinter_webcam import webcam
-
 
 def Tabs(root):
     root.geometry("500x450")
