@@ -19,6 +19,8 @@ def Tabs1(root):
         tabControl.add(Radar1, text ='Radar1') 
         tabControl.pack(expand = 1, fill ="both") 
     
+        Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=10, y=60, height = 45, width= 90)
+
         video = webcam.Box(Radar1, width=450, height=450)
         video.show_frames()
         root.mainloop()
