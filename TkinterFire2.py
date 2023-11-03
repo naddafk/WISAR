@@ -52,7 +52,7 @@ def Jimmy(root):
     Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=5, y=20, height = 45, width= 90)
     video.show_frames()
 
-    root.mainloop()
+    root.mainloop()                         
   
 def fun_Jimmy():
     Jimmy(root)
