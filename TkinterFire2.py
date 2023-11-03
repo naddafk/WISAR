@@ -2,7 +2,6 @@ from tkinter import*
 from tkinter import ttk
 import tkinter as tk 
 from tkinter_webcam import webcam
-from BackButton2 import*
 root=tk.Tk
 
 
@@ -13,6 +12,7 @@ def Firefighters(root):
     #backbtn.place(x=17, y=70, height = 45, width= 90)
     Label(root, text= "Firefighters", font = ('Maiandra GD', 32), width=20).grid() 
     Button(root, text= "Back",  fg = 'black', command= root.destroy). place(x=17, y=70, height = 45, width= 90)
+    Button(root, text= "Add Firefighter", font = ('Maiandra GD', 17) , width=20 , command= lambda : change(Jimmy)).grid()
     Button(root, text= "Jimmy 💗 68", bg = "crimson", fg = 'ghostwhite', font = ('Maiandra GD', 17) , width=20 , command= lambda : change(Jimmy)).grid()
     Button(root, text= "Sarah  💗 83", bg = "crimson", fg = 'ghostwhite', font = ('Maiandra GD', 17) , width=20 , command= lambda : change(Sarah)).grid()
     Button(root, text= "Luffy  💗 76", bg = "crimson",fg = 'ghostwhite', font = ('Maiandra GD', 17) , width=20 , command= lambda : change(Luffy)).grid()
