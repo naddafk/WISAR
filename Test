@@ -1,0 +1,80 @@
+import tkinter as tk
+from tkinter import ttk
+from tkinter import*
+
+root = tk.Tk()
+root.geometry("500x400")
+root.title("Tkinter Hub")
+
+main_frame = tk.Frame(root, bg= "white")
+
+page_1 = tk.Frame(main_frame)
+
+Label(page_1, text= "Welcome To", bg= "white", font=("Maiandra GD", 20))
+Label(page_1, text= "WISAR", bg = "white", font= ("Maiandra GD", 20))
+
+page_2 = tk.Frame(main_frame)
+page_2_lb = tk.Label(page_2, text= "Home", bg= "white", font= ("Maiandra GD", 40))
+page_2_lb.pack()
+
+page_3 = tk.Frame(main_frame)
+page_3_lb = tk.Label(page_3, text = "Menu", bg = "white", font= ("Maiandra GD", 40))
+page_3_lb.pack()
+
+page_4 = tk.Frame(main_frame)
+page_4_lb = tk.Label(page_4, text= "About", bg= "white", font= ("Maiandra GD", 40))
+page_4_lb.pack()
+
+main_frame.pack(fill=tk.BOTH, expand=True)
+
+pages = [page_1, page_2, page_3, page_4]
+count = 0
+
+
+def move_next_page():
+    global count
+
+    if not count > len(pages) - 2:
+
+        for p in pages:
+            p.pack_forget()
+    
+        count += 1
+        page = pages[count]
+        page.pack(pady=100)
+
+def move_back_page():
+    global count
+
+    if not count == 0:
+
+        for p in pages:
+            p.pack_forget()
+    
+        count -= 1
+        page = pages[count]
+        page.pack(pady=100)
+
+
+bottom_frame = tk.Frame(root)
+
+back_btn = tk.Button(text= "Back",
+font=("Maiandra GD", 9),bg="white", fg= "black", width= 8,command=move_back_page) 
+back_btn.pack(side=tk.LEFT, padx=10)
+back_btn.place(x=27,y=40, height = 30, width=50)
+
+next_btn = tk.Button(text= "View Radars", font=("Maiandra GD", 12),
+                     bg= "white", fg= "black", width= 8,
+                     command=move_next_page)
+next_btn.pack(side=tk.RIGHT, padx=10)
+next_btn.place(x= 125, y=200, height= 50, width=250)
+
+next_btn = tk.Button(text= "View Firefighters", font=("Maiandra GD", 12),
+                     bg= "white", fg= "black", width= 8,
+                     command=move_next_page)
+next_btn.pack(side=tk.RIGHT, padx=10)
+next_btn.place(x= 125, y= 270, height= 50, width=250)
+
+bottom_frame.pack(side=tk.BOTTOM, pady=10)
+
+root.mainloop()
