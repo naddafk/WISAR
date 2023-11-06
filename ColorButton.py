@@ -10,7 +10,7 @@ class App(tk.Frame):
 
         self.master.title("New Firefighters")
 
-        self.count = 0
+        self.count = 1
         self.labels = {}
 
         self.init_ui()

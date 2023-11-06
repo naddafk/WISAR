@@ -2,6 +2,8 @@ from tkinter import*
 from tkinter import ttk
 import tkinter as tk 
 from tkinter_webcam import webcam
+import tkinter as tk
+import random
 root=tk.Tk
 
 def Firefighters(root):
